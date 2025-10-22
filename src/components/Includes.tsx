@@ -1,0 +1,89 @@
+import { FileText, Code, Sparkles, RefreshCw, Gift, Check } from 'lucide-react';
+
+export function Includes() {
+  const items = [
+    {
+      icon: FileText,
+      title: '10 módulos em PDF interativo',
+      description: 'Conteúdo completo e profundo sobre cada aspecto do branding inteligente'
+    },
+    {
+      icon: Code,
+      title: 'Acesso aos system prompts prontos',
+      description: 'Templates otimizados e testados para criar seus agentes imediatamente'
+    },
+    {
+      icon: Sparkles,
+      title: 'Agentes refinados e testados',
+      description: 'Sistemas completos que você pode implementar e personalizar'
+    },
+    {
+      icon: RefreshCw,
+      title: 'Atualizações futuras gratuitas',
+      description: 'Receba novos módulos e melhorias sem custo adicional'
+    },
+    {
+      icon: Gift,
+      title: 'Bônus de templates e exercícios',
+      description: 'Materiais práticos para acelerar sua implementação'
+    }
+  ];
+
+  return (
+    <section className="py-24 px-6 bg-slate-950 relative overflow-hidden">
+      <div className="absolute inset-0">
+        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-[120px]"></div>
+      </div>
+
+      <div className="max-w-6xl mx-auto relative z-10">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm mb-8">
+            <Gift className="w-4 h-4" />
+            <span>Tudo incluído</span>
+          </div>
+
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            O que você recebe
+          </h2>
+
+          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+            Tudo que você precisa para dominar o branding inteligente.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {items.map((item, i) => {
+            const Icon = item.icon;
+            return (
+              <div
+                key={i}
+                className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-emerald-500/30 transition-all duration-300 group"
+              >
+                <div className="flex gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="w-14 h-14 bg-emerald-500/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Icon className="w-7 h-7 text-emerald-400" />
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-slate-400 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="absolute top-8 right-8">
+                  <Check className="w-6 h-6 text-emerald-400" />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
