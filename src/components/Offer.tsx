@@ -22,8 +22,7 @@ export function Offer() {
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            Domine o Branding Inteligente e posicione-se na
-            <span className="text-emerald-400"> próxima geração de criativos</span>
+            Domine o Branding Inteligente e posicione-se na <span className="text-emerald-400">próxima geração de criativos</span>
           </h2>
         </div>
 
@@ -39,7 +38,7 @@ export function Offer() {
                   <span className="text-slate-400 text-xl">à vista</span>
                 </div>
                 <div className="text-emerald-400 font-semibold mt-2 text-lg">
-                  ou 12x de R$ 15,70
+                  ou 12x de R$ 18,26
                 </div>
               </div>
 
@@ -89,7 +88,7 @@ export function Offer() {
 
         <div className="mt-12 text-center">
           <p className="text-slate-400 text-sm">
-            Dúvidas? Entre em contato: <a href="mailto:contato@brandingia.com" className="text-emerald-400 font-semibold hover:underline">contato@brandingia.com</a>
+            Dúvidas? Entre em contato: <a href="mailto:hugosoav@gmail.com" className="text-emerald-400 font-semibold hover:underline">hugosoav@gmail.com</a>
           </p>
         </div>
       </div>

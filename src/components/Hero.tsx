@@ -16,11 +16,7 @@ export function Hero() {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Transforme sua forma de<br />
-            <span className="text-emerald-400">
-              fazer branding
-            </span><br />
-            com Inteligência Artificial
+            Transforme sua forma de <span className="text-emerald-400">fazer branding</span> com Inteligência Artificial
           </h1>
 
           <p className="text-xl md:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed">
