@@ -19,8 +19,7 @@ export function Problem() {
         </h2>
 
         <p className="text-xl md:text-2xl text-slate-300 leading-relaxed">
-          Designers e estrategistas estão sendo substituídos — não por IA,
-          mas por <span className="text-emerald-400 font-semibold">quem sabe usá-la com propósito.</span>
+          Designers e estrategistas estão sendo substituídos — não por IA, mas por <span className="text-emerald-400 font-semibold">quem sabe usá-la com propósito.</span>
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
