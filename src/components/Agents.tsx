@@ -51,12 +51,38 @@ export function Agents() {
           </p>
         </div>
 
+        {/* Primeira linha: 3 cards padrão */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {agents.map((agent, i) => {
+          {agents.slice(0, 3).map((agent, i) => {
             const Icon = agent.icon;
             return (
               <div
                 key={i}
+                className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-emerald-500/30 transition-all duration-300 hover:-translate-y-2 group"
+              >
+                <div className="w-14 h-14 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Icon className="w-7 h-7 text-emerald-400" />
+                </div>
+
+                <h3 className="text-xl font-bold mb-3">
+                  {agent.name}
+                </h3>
+
+                <p className="text-slate-400 leading-relaxed">
+                  {agent.description}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Segunda linha: 2 cards centralizados */}
+        <div className="mt-6 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+          {agents.slice(3).map((agent, i) => {
+            const Icon = agent.icon;
+            return (
+              <div
+                key={`second-${i}`}
                 className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-emerald-500/30 transition-all duration-300 hover:-translate-y-2 group"
               >
                 <div className="w-14 h-14 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">

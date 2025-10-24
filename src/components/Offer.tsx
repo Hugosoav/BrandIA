@@ -22,7 +22,7 @@ export function Offer() {
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            Domine o Branding Inteligente e posicione-se na <span className="text-emerald-400">próxima geração de criativos</span>
+            Domine o Branding Inteligente e <br/> posicione-se na <span className="text-emerald-400">próxima geração de criativos</span>
           </h2>
         </div>
 

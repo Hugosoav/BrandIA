@@ -29,6 +29,11 @@ export function Includes() {
     }
   ];
 
+  // Se houver quantidade ímpar, o último card será centralizado
+  const hasOdd = items.length % 2 === 1;
+  const topItems = hasOdd ? items.slice(0, items.length - 1) : items;
+  const lastItem = hasOdd ? items[items.length - 1] : null;
+
   return (
     <section className="py-24 px-6 bg-slate-950 relative overflow-hidden">
       <div className="absolute inset-0">
@@ -51,8 +56,9 @@ export function Includes() {
           </p>
         </div>
 
+        {/* Grid principal em 2 colunas */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {items.map((item, i) => {
+          {topItems.map((item, i) => {
             const Icon = item.icon;
             return (
               <div
@@ -83,6 +89,39 @@ export function Includes() {
             );
           })}
         </div>
+
+        {/* Último card centralizado quando a quantidade é ímpar */}
+        {hasOdd && lastItem && (
+          <div className="mt-8 max-w-2xl mx-auto">
+            <div className="grid grid-cols-1">
+              <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-emerald-500/30 transition-all duration-300 group">
+                <div className="flex gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="w-14 h-14 bg-emerald-500/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      {(() => {
+                        const Icon = lastItem.icon;
+                        return <Icon className="w-7 h-7 text-emerald-400" />;
+                      })()}
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">
+                      {lastItem.title}
+                    </h3>
+                    <p className="text-slate-400 leading-relaxed">
+                      {lastItem.description}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="absolute top-8 right-8">
+                  <Check className="w-6 h-6 text-emerald-400" />
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
