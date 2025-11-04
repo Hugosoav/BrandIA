@@ -20,24 +20,24 @@ export function Solution() {
   ];
 
   return (
-    <section className="py-24 px-6 bg-slate-900 text-white relative overflow-hidden">
+    <section className="py-24 px-6 bg-white text-black relative overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-emerald-500/20 rounded-full blur-[120px]"></div>
+        <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-gray-200 rounded-full blur-[120px]"></div>
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-gray-300 text-gray-900 text-sm mb-8">
             <Lightbulb className="w-4 h-4" />
             <span>A solução que você procura</span>
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight max-w-4xl mx-auto">
             O Branding Inteligente com IA é o método que ensina você a criar e vender
-            <span className="text-emerald-400"> agentes de marca inteligentes</span>
+            <span className="text-gray-900"> agentes de marca inteligentes</span>
           </h2>
 
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Sistemas que pensam, aprendem e se adaptam como estrategistas humanos.
           </p>
         </div>
@@ -46,12 +46,12 @@ export function Solution() {
           {benefits.map((benefit, i) => {
             const Icon = benefit.icon;
             return (
-              <div key={i} className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-emerald-500/30 transition-all duration-300 group">
-                <div className="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Icon className="w-6 h-6 text-emerald-400" />
+              <div key={i} className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 hover:border-gray-400 transition-all duration-300 group">
+                <div className="w-12 h-12 bg-gray-200 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Icon className="w-6 h-6 text-gray-900" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
-                <p className="text-slate-400 leading-relaxed">{benefit.description}</p>
+                <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
               </div>
             );
           })}

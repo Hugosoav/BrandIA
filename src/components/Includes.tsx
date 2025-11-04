@@ -35,23 +35,23 @@ export function Includes() {
   const lastItem = hasOdd ? items[items.length - 1] : null;
 
   return (
-    <section className="py-24 px-6 bg-slate-950 relative overflow-hidden">
+    <section className="py-24 px-6 bg-white relative overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-[120px]"></div>
+        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-gray-100 rounded-full blur-[120px]"></div>
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-gray-300 text-gray-900 text-sm mb-8">
             <Gift className="w-4 h-4" />
             <span>Tudo incluído</span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
             O que você recebe
           </h2>
 
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Tudo que você precisa para dominar o branding inteligente.
           </p>
         </div>
@@ -63,27 +63,27 @@ export function Includes() {
             return (
               <div
                 key={i}
-                className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-emerald-500/30 transition-all duration-300 group"
+                className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 hover:border-gray-400 transition-all duration-300 group"
               >
                 <div className="flex gap-6">
                   <div className="flex-shrink-0">
-                    <div className="w-14 h-14 bg-emerald-500/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <Icon className="w-7 h-7 text-emerald-400" />
+                    <div className="w-14 h-14 bg-gray-200 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Icon className="w-7 h-7 text-gray-900" />
                     </div>
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-2">
+                    <h3 className="text-xl font-bold text-black mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-slate-400 leading-relaxed">
+                    <p className="text-gray-600 leading-relaxed">
                       {item.description}
                     </p>
                   </div>
                 </div>
 
                 <div className="absolute top-8 right-8">
-                  <Check className="w-6 h-6 text-emerald-400" />
+                  <Check className="w-6 h-6 text-gray-900" />
                 </div>
               </div>
             );
@@ -94,29 +94,29 @@ export function Includes() {
         {hasOdd && lastItem && (
           <div className="mt-8 max-w-2xl mx-auto">
             <div className="grid grid-cols-1">
-              <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-emerald-500/30 transition-all duration-300 group">
+              <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 hover:border-gray-400 transition-all duration-300 group">
                 <div className="flex gap-6">
                   <div className="flex-shrink-0">
-                    <div className="w-14 h-14 bg-emerald-500/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-14 h-14 bg-gray-200 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       {(() => {
                         const Icon = lastItem.icon;
-                        return <Icon className="w-7 h-7 text-emerald-400" />;
+                        return <Icon className="w-7 h-7 text-gray-900" />;
                       })()}
                     </div>
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-2">
+                    <h3 className="text-xl font-bold text-black mb-2">
                       {lastItem.title}
                     </h3>
-                    <p className="text-slate-400 leading-relaxed">
+                    <p className="text-gray-600 leading-relaxed">
                       {lastItem.description}
                     </p>
                   </div>
                 </div>
 
                 <div className="absolute top-8 right-8">
-                  <Check className="w-6 h-6 text-emerald-400" />
+                  <Check className="w-6 h-6 text-gray-900" />
                 </div>
               </div>
             </div>
