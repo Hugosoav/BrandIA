@@ -9,43 +9,43 @@ export function Offer() {
   ];
 
   return (
-    <section id="offer-section" className="py-24 px-6 bg-white relative overflow-hidden">
+    <section id="offer-section" className="py-24 px-6 bg-black relative overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute top-0 right-1/3 w-[500px] h-[500px] bg-gray-200 rounded-full blur-[120px]"></div>
+        <div className="absolute top-0 right-1/3 w-[500px] h-[500px] bg-gray-900 rounded-full blur-[120px]"></div>
       </div>
 
       <div className="max-w-5xl mx-auto relative z-10">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-gray-300 text-gray-900 text-sm mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-900 border border-gray-700 text-gray-100 text-sm mb-8">
             <Sparkles className="w-4 h-4" />
             <span>Oferta Especial</span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6 leading-tight">
-            Domine o Branding Inteligente e <br/> posicione-se na <span className="text-gray-900">próxima geração de criativos</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            Domine o Branding Inteligente e <br/> posicione-se na <span className="text-gray-100">próxima geração de criativos</span>
           </h2>
         </div>
 
-        <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-gray-200">
+        <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-gray-800">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="mb-8">
-                <div className="text-gray-600 text-lg mb-2 line-through">
+                <div className="text-gray-400 text-lg mb-2 line-through">
                   De R$ 497,00
                 </div>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-black text-6xl font-bold">R$ 157</span>
-                  <span className="text-gray-600 text-xl">à vista</span>
+                  <span className="text-white text-6xl font-bold">R$ 157</span>
+                  <span className="text-gray-400 text-xl">à vista</span>
                 </div>
-                <div className="text-gray-900 font-semibold mt-2 text-lg">
+                <div className="text-gray-100 font-semibold mt-2 text-lg">
                   ou 12x de R$ 18,26
                 </div>
               </div>
 
               <div className="space-y-3 mb-8">
                 {guarantees.map((guarantee, i) => (
-                  <div key={i} className="flex items-center gap-3 text-black">
-                    <Check className="w-5 h-5 text-gray-900 flex-shrink-0" />
+                  <div key={i} className="flex items-center gap-3 text-white">
+                    <Check className="w-5 h-5 text-white flex-shrink-0" />
                     <span>{guarantee}</span>
                   </div>
                 ))}
@@ -57,25 +57,25 @@ export function Offer() {
                 href="https://pay.cakto.com.br/ynb55cf_616474"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full group bg-black text-white text-xl font-bold py-6 px-8 rounded-2xl hover:bg-gray-900 transition-all duration-300 hover:scale-105 hover:shadow-2xl flex items-center justify-center gap-3 mb-6"
+                className="w-full group bg-white text-black text-xl font-bold py-6 px-8 rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-2xl flex items-center justify-center gap-3 mb-6"
               >
                 Quero garantir meu acesso agora
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
               </a>
 
-              <div className="flex items-center gap-3 text-gray-600 text-sm justify-center">
+              <div className="flex items-center gap-3 text-gray-400 text-sm justify-center">
                 <Shield className="w-5 h-5" />
                 <span>Pagamento 100% seguro</span>
               </div>
 
-              <div className="mt-8 p-6 bg-gray-50 backdrop-blur-sm rounded-xl border border-gray-200">
+              <div className="mt-8 p-6 bg-gray-900 backdrop-blur-sm rounded-xl border border-gray-800">
                 <div className="flex items-start gap-3">
-                  <Shield className="w-6 h-6 text-gray-900 flex-shrink-0 mt-1" />
+                  <Shield className="w-6 h-6 text-white flex-shrink-0 mt-1" />
                   <div>
-                    <div className="text-black font-semibold mb-2">
+                    <div className="text-white font-semibold mb-2">
                       Garantia de 7 dias
                     </div>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-400 text-sm leading-relaxed">
                       Se você não gostar do conteúdo ou achar que não é para você,
                       devolvemos 100% do seu investimento. Sem perguntas.
                     </p>
@@ -87,8 +87,8 @@ export function Offer() {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-gray-600 text-sm">
-            Dúvidas? Entre em contato: <a href="mailto:hugosoav@gmail.com" className="text-gray-900 font-semibold hover:underline">hugosoav@gmail.com</a>
+          <p className="text-gray-400 text-sm">
+            Dúvidas? Entre em contato: <a href="mailto:hugosoav@gmail.com" className="text-white font-semibold hover:underline">hugosoav@gmail.com</a>
           </p>
         </div>
       </div>

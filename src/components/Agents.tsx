@@ -30,14 +30,14 @@ export function Agents() {
   ];
 
   return (
-    <section className="py-24 px-6 bg-white text-black relative overflow-hidden">
+    <section className="py-24 px-6 bg-black text-white relative overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-gray-200 rounded-full blur-[120px]"></div>
+        <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-gray-900 rounded-full blur-[120px]"></div>
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 border border-gray-300 text-gray-900 text-sm mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-900 border border-gray-700 text-gray-100 text-sm mb-8">
             <Sparkles className="w-4 h-4" />
             <span>Agentes Inteligentes</span>
           </div>
@@ -46,7 +46,7 @@ export function Agents() {
             Os Agentes que você vai criar
           </h2>
 
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Aprenda a criar agentes que pensam como estrategistas.
           </p>
         </div>
@@ -58,17 +58,17 @@ export function Agents() {
             return (
               <div
                 key={i}
-                className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 hover:border-gray-400 transition-all duration-300 hover:-translate-y-2 group"
+                className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-gray-800 hover:border-gray-600 transition-all duration-300 hover:-translate-y-2 group"
               >
-                <div className="w-14 h-14 bg-gray-200 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Icon className="w-7 h-7 text-gray-900" />
+                <div className="w-14 h-14 bg-gray-800 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Icon className="w-7 h-7 text-white" />
                 </div>
 
                 <h3 className="text-xl font-bold mb-3">
                   {agent.name}
                 </h3>
 
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-400 leading-relaxed">
                   {agent.description}
                 </p>
               </div>
@@ -83,17 +83,17 @@ export function Agents() {
             return (
               <div
                 key={`second-${i}`}
-                className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 hover:border-gray-400 transition-all duration-300 hover:-translate-y-2 group"
+                className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-gray-800 hover:border-gray-600 transition-all duration-300 hover:-translate-y-2 group"
               >
-                <div className="w-14 h-14 bg-gray-200 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Icon className="w-7 h-7 text-gray-900" />
+                <div className="w-14 h-14 bg-gray-800 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Icon className="w-7 h-7 text-white" />
                 </div>
 
                 <h3 className="text-xl font-bold mb-3">
                   {agent.name}
                 </h3>
 
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-400 leading-relaxed">
                   {agent.description}
                 </p>
               </div>
